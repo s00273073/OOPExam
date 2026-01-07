@@ -5,8 +5,54 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OOP"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="350" Width="525">
     <Grid>
-
+        <TextBox FontSize="10" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="369,56,0,0" Height="154" Width="146" TextChanged="TextBox_TextChanged_1" TextWrapping="Wrap" BorderThickness="0,0,0,0" Text="I am a household robot. &#xD;&#xA;I can help with chores around the house.&#xD;&#xA;&#xD;&#xA;Household Robot Skills: Cleaning, Gardening&#xD;&#xA; &#xD;&#xA;Battery Information&#xD;&#xA;Capacity: 25kWh&#xD;&#xA;Current Power: 25kWh &#xD;&#xA;Battery Leve: 100%"/>
+        <Image Source="Images/robot.png" 
+               HorizontalAlignment="Left" VerticalAlignment="Top" 
+               Margin="161,60,0,0" Width="50" Height="50"/>
+        <TextBlock Text="Filter" 
+                   HorizontalAlignment="Left" VerticalAlignment="Top" 
+                   Margin="73,10,0,0" FontSize="15"/>
+        <Button Content="Click Me" Width="131" Height="31"
+                HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,70,0,0"/>
+        <Button Content="Click Me" Width="131" Height="30"
+            HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,147,0,0"/>
+        <Button Content="Click Me" Width="131" Height="30"
+            HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,216,0,0"/>
+        <TextBlock 
+            HorizontalAlignment="Center" VerticalAlignment="Top" 
+            Margin="0,10,0,0" FontSize="15" Text="Robot list"/>
+        <TextBlock 
+            HorizontalAlignment="Left" VerticalAlignment="Top" 
+            Margin="373,10,0,0" FontSize="15"><Run Text="Robot "/><Run Language="en-gb" Text="Details"/></TextBlock>
+        <Image Source="/images/household-robot.png" 
+            HorizontalAlignment="Left" VerticalAlignment="Top" 
+            Margin="154,137,0,0" Width="50" Height="50"/>
+        <Image Source="/images/delivery-robot.png" 
+            HorizontalAlignment="Left" VerticalAlignment="Top" 
+            Margin="154,206,0,0" Width="50" Height="50"/>
+        <ListBox FontSize="9"
+            HorizontalAlignment="Left" VerticalAlignment="Top" 
+            Margin="201,62,0,0" Width="169" Height="20" SelectionChanged="ListBox_SelectionChanged" BorderThickness="0,0,0,0">Housebot 01 -[HouseholdRobot]</ListBox>
+        <ListBox FontSize="9"
+            HorizontalAlignment="Left" VerticalAlignment="Top" 
+            Margin="201,88,0,0" Width="169" Height="20" BorderThickness="0,0,0,0">GardenMate - [HouseholdRobot]</ListBox>
+        <ListBox FontSize="9"
+            HorizontalAlignment="Left" VerticalAlignment="Top" 
+            Margin="201,115,0,0" Width="169" Height="20" BorderThickness="0,0,0,0">HouseMate 3000 - [HouseholdRobot</ListBox>
+        <ListBox FontSize="9"
+            HorizontalAlignment="Left" VerticalAlignment="Top" 
+            Margin="201,140,0,0" Width="169" Height="20" BorderThickness="0,0,0,0">DeliverBot - [DeliveryRobot]</ListBox>
+        <ListBox FontSize="9"
+            HorizontalAlignment="Left" VerticalAlignment="Top" 
+            Margin="201,165,0,0" Width="169" Height="20" BorderThickness="0,0,0,0">FlyBot - [DeliveryRobot]</ListBox>
+        <ListBox FontSize="9"
+            HorizontalAlignment="Left" VerticalAlignment="Top" 
+            Margin="201,190,0,0" Width="169" Height="20" BorderThickness="0,0,0,0"   >Driver - [DeliveryRobot]</ListBox>
+        <Button Content="Charge" Width="110" Height="23"
+            HorizontalAlignment="Left" VerticalAlignment="Top" Margin="394,301,0,0" BorderBrush="#FF3D0069" Background="#FF3D0069" Foreground="White"/>
     </Grid>
+
+
 </Window>
